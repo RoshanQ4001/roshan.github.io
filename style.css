@@ -126,3 +126,42 @@ footer{
   display: flex;
   padding: 23px 122px;
 }
+/* For devices larger than 1200px */
+@media (min-width: 1200px) {
+  .firstSection {
+    flex-direction: row;
+  }
+  .rigthsection img {
+    width: 50%;
+  }
+}
+
+/* For tablets (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .firstSection {
+    flex-direction: column;
+  }
+  .rigthsection img {
+    width: 80%;
+  }
+}
+
+/* For mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstSection {
+    flex-direction: column;
+  }
+  .rigthsection img {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+}
